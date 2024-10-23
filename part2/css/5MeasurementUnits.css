@@ -1,0 +1,22 @@
+html {
+    font-size: 62.5%;
+}
+
+.box {
+    width: 50vw;
+    height: 10vh;
+    background-color: pink;
+    border-top: 3px solid orange;
+}
+/* 
+vw - view width, the % of view width that will occupied of the total page
+vh - view height, the % of view height that will occupied of the total page
+em - times of the font size of the current element, default size: 16px. To use when we know the font size
+rem - times of the font size of the root element. To use when we don't know the font size
+
+We can set the default size adding this to the top of the css:
+html {
+    font-size: 62.5%;
+}
+Which means, 62.5% of 16px = 10px. So if we use "rem" wil be easier to make the calculations
+*/

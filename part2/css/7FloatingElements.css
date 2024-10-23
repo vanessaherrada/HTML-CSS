@@ -1,0 +1,36 @@
+body {
+    margin: 10px;
+}
+
+.tweet {
+    border: 3px solid lightgray;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    background-color: aquamarine;
+    float: left; /* the avatar element will float in the left side of his container and also all the subsequent elements too. */
+    margin-right: 0.5rem; /* set a margin right to the avatar element, so the text isn't to close to the box */
+}
+
+.clear {
+    clear: left; /* needs to be left as we have "float:left" can be right if the float is right. Also can be "both" if we are using floats in both sides.
+    This makes the text appear below the box and not on the right */
+}
+
+/* 
+NOTA 1: The clear is used also to have border of the tweet out of the avatar box, this is because the border doesn't take in consideration the box, so the result will be a gray border behind the avatar box. We add a div.clear after the text to make this happen but the problem with this is that this DIV doesn't have much sense on beeing here so we replace it with "clearfix": 
+*/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*
+NOTE 2: one more way to fix this problem is to add in .tweet:
+overflow: hidden;
+*/

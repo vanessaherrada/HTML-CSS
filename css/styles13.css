@@ -1,0 +1,10 @@
+p {
+    color: dodgerblue;
+    border: 1px solid black;
+}
+
+/* to set a rule to the default value */
+strong {
+    color: initial;
+    border: inherit;
+}

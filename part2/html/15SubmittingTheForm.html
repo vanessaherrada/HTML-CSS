@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+    <form action="https://....." method="POST">  
+        <!-- 
+        "action"; we add the place where we want to store the data, we can use formspree.io which is free.
+        "method"; we use "POST" to include the info set by the user in the body
+                we can also use "GET" but the info won't be in the body instead will be appended to the url (like google that we'll see the words used in the research in the link)
+        -->
+      <input type="text" placeholder="Name" name="name">
+      <input type="text" placeholder="Email" name="email">
+      <button type="submit">Submit</button> 
+      <!--
+      another way to set a submit button is using: <input type="submit" value="Submit"
+      differences:
+      input: we can only add text, so we won't be able to add an icon>
+      button: we can add an icon
+      -->
+    </form>
+</body>
+</html>

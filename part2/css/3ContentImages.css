@@ -1,0 +1,11 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:large;
+    color: rgb(21, 28, 30);
+    background: url(../images2/images/bg-sanfrancisco.jpg);
+    background-repeat: no-repeat; /* to set the parameters if the backround, if we want to repeat it horizontaly or verticaly ... */
+    /* background-position: 100px 100px;  to se the backround in a specific place, 100px to the right and 100px down, we can use negative values, % */
+    background-size: cover; /* size of the backround, px, %, cover ... */
+    background-attachment: fixed; /* the backround gets fix to the view, so when we scroll down/up the image won't move but the content will move */
+    height: 20vh;
+}

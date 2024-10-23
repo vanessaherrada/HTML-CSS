@@ -1,0 +1,76 @@
+body {
+    margin: 10px;
+}
+
+p {
+    color: orange;
+}
+
+a[href*="google"] {
+    color: orange;
+}
+
+/* relational selector */
+#products + p {
+    color: orange;
+}
+
+/* to use a pseudo-class selectors we use ":" */
+/* first-child will be applied to the first element, the same rule is applied to the last-child */
+article :first-child {
+    font-size: 140%;
+    font-style: italic;
+}
+
+/* first-of-type will be applied to the first type of each element in the article */
+article :first-of-type {
+    font-size: 140%;
+    font-style: italic;
+}
+
+/* p:first-of-type will be applied to the first type of p */
+article p:first-of-type {
+    font-size: 140%;
+    font-style: italic;
+}
+
+ul li:nth-child(odd){
+    color: deeppink;
+}
+
+a:visited, a:link {
+    color: dodgerblue;
+}
+
+/* a:hover when the mouse is passed in the link will be change to pink 
+a:focus if the user is using key controls the link will be turned in pink */
+a:hover, a:focus {
+    color: deeppink;
+}
+
+/* :: for pseudo-elements, : for pseudo-classes*/
+p::first-letter {
+    font-size: 140%;
+    font-style: bold;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+/* applies the color only to p elements selected*/
+p::selection {
+    background-color: pink;
+}
+
+/* if we want to apply the color to all elements selected*/
+::selection {
+    background-color: pink;
+}
+
+/* to add something just before a paragraph */
+p::before {
+    content: "...";
+    display: block;
+}
+/* instead of before we can use: after */

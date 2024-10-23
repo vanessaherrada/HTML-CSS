@@ -1,0 +1,29 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    border: 3px solid lightgray;
+    display: flex; /* instead of having the boxes inside of this container element in different lines, we have them in the same line */
+    flex-direction: row; /* we can set the direction of the flex too */
+    justify-content: space-evenly;
+    align-items: center; /* how up or down we want the boxes */
+    flex-wrap: wrap; /* when the line is full, moves the lasts boxes to the next line */
+    align-content: center; /* specifies how flex lines are distributed along the cross axis in a flexbox container. */
+    height: 90vh;
+}
+
+.box {
+    /* flex-basis: 10rem;  specifies the initial length of the boxes. Numbers with metrics */
+    /* flex-grow: 1; specifies how much the item will grow relative to the rest of the flexible items inside the same container. Only numbers */
+    /* flex-shrink: 1; specifies how the item will shrink relative to the rest of the flexible items inside the same container. Only numbers */
+    /* flex: 1 1 15rem; combiens the 3 previous flex */
+    width: 5rem;
+    height: 5rem;
+    background: pink;
+    margin: 1rem;
+}
+
+.box-one {
+    align-self: flex-start;
+}

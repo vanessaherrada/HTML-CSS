@@ -1,0 +1,119 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(180, 77%, 55%);
+}
+/* COLORS
+
+"RGB" red, green, blue
+Example: 
+background-color: rgb(3, 252, 232);
+
+if we want the box with transparency we use "rgba" where "a" comes from 0 
+to 1, 0 is totally transparent
+Example:
+background-color: rgba (12, 12, 123, 0.5);
+
+Another way to set the color is with "HEX"
+Example:
+background-color: #03fce8;
+
+One more option is the "HSL" (hue, saturation, lightness), we need to remove 
+the ° character as it isn't a valid character in css
+Example: 
+background-color: hsl(175, 98%, 50%);
+
+To add a transparency we use: "HSLA", transparency comes from a (same as "rgba")
+Example: 
+background-color: hsla(175, 98%, 50%, 0.7);
+*/
+
+/*GRADIENTS
+Gradients are technically images. 
+*/
+.box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient( dodgerblue, yellow);
+}
+/* 
+LINEAR-GRADIENT. From the bottom right corner to the upper left corner
+background-image: linear-gradient(to right, dodgerblue, yellow);
+background-image: linear-gradient(to bottom right, dodgerblue, yellow);
+background-image: linear-gradient(45deg, dodgerblue, yellow);
+background-image: linear-gradient(to right, dodgerblue, yellow 30%);
+background-image: linear-gradient(to right, dodgerblue, yellow, tomato);
+*/
+
+.box {
+    width: 600px;
+    height: 200px;
+    background: radial-gradient( circle, white, yellow);
+}
+/*
+RADIAL-GRADIENT. From the center to the corners
+background: radial-gradient(white, yellow);
+background: radial-gradient(circle at top left, white, yellow);
+*/
+
+.box {
+    width: 600px;
+    height: 200px;
+    background: rgb(98,37,158);
+    background: linear-gradient(32deg, rgba(98,37,158,1) 0%, rgba(0,255,211,1) 100%);
+}
+/* page to create gradient code: https://cssgradient.io/ */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(180, 77%, 55%);
+    border: 10px solid royalblue;
+}
+/*BORDER
+we can use: solid, dotted, dashed
+Also the border can be: border-top, border-right, border-bottom, border-left, ...
+The order of the borders matter (the last one is the one applied), "border-width" is used when we need to 
+set different values to each border (top, right, bottom, left).
+Example:
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(180, 77%, 55%);
+    border: 10px solid royalblue;
+    border-width: 10px 20px 10px 20px;
+}
+*/
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(180, 77%, 55%);
+    border: 10px solid royalblue;
+    border-radius: 50px;
+}
+/* BORDER RADIUS
+To make the corners rounded, the higher the rounded
+we can use:https://css-tricks.com/the-shapes-of-css/ to learn of how to add shapes
+*/
+.box {
+    width: 600px;
+    height: 200px;
+    background: rgb(98,37,158);
+    box-shadow: 10px 30px 10px grey;
+}
+/* SHADOWS
+box-shadow: 10px 30px 10px grey;
+1st value :if positive (10px) to the right, if negative (-10px) to the left
+2nd value: if positive (20px) down, if negative (-20px) up
+3rd value: blur intensity
+4th value: color of the shadow
+if we want to add the shadow all around the figure we set: 
+box-shadow: 0 0 10px grey;
+*/
+h1 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+/* SHADOW IN TEXT
+we can use the "rgba" color to make them look better
+*/

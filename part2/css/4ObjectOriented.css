@@ -1,0 +1,36 @@
+/* separate the content from the container removing the .hero so we'll have the same characteristics applied to both buttons */
+
+/* BEFORE */
+.hero .btn {
+    background: rgb(132, 205, 219);
+    border: 0;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* AFTER */
+.btn {
+    background: rgb(132, 205, 219);
+    border: 0;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* If for example, we want to change to blue the background color of the 2nd button, we have to set the common parameters together but the different ones will go separated. Don't forget to add the new classes (btn-primary & btn-secondary) to the HTML file */
+
+.btn {
+    border: 0;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.btn-primary {
+    background-color: rgb(89, 13, 102);
+}
+
+.btn-secondary{
+    background-color: aqua;
+}

@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    /* 
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 100px);  repeat is used to set a parameter that is repeated */
+    grid-template: 100px auto 100px / 30fr 70fr; /* this line can be used instead of the 2 lines before */
+    /* grid-template: repeat(3, 100px) / 100px 30fr 70fr
+    when we use % we have to remind that is of the 100% of the container and not of the free space, to solve this issue we can use "fr" which means fraction of the free space */
+    /*row-gap: 10px;  to add a space between rows 
+    column-gap: 10px;  to add a space between columns */
+    grid-template-areas:
+    "header  header" 
+    "sidebar main" 
+    "footer  footer";  /* we name the areas of each row to use this info in the "grid-area" (.box-one) */
+    gap: 10px; /* instead of the 2 previous lines: row-gap and column-gap */
+    border: 3px solid lightblue;
+    justify-items: center; /* is set on the grid container to give child elements (grid items) alignment in the inline direction. */
+    align-items: center; /* specifies the default alignment for items inside a flexbox or grid container. */
+    /* if justify-items and align-items are stretch, the content will occupied all the space (horizontal and vertical accordingly, stretch is the default value so no need to specify it */
+    /* justify-content: center;   aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally). */
+    /* align-content: center;  specifies how flex lines are distributed along the cross axis in a flexbox container. */
+    height: 100vh;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background-color: #eb8ec2 ;
+}
+
+.box-one {
+    grid-column: 2; /* to set the column where .box-one will be
+    grid-column: 1 / 3;  if we want .box-one to be in more than one column we use this to specified the line number where it starts and ends, we can also use 1 / span 2; */
+    grid-row: 2; /* same than grid-column but with the rows */
+    /* grid-area: 1/1/1/3; the syntax is:*/
+    /* start / end */
+    /* row / column */
+    grid-area: header;
+}
+
+.box-four {
+    grid-area: footer;
+}

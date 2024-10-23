@@ -1,0 +1,30 @@
+.boxes {
+    border: 3px solid lightgray;
+    position: relative;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-one {
+    background-color: pink;
+}
+.box-two {
+    background-color: tomato;
+    position: absolute; /* the box moves to the bottom rigth side of the .boxes lightgray */
+    left: 2rem; /* we get the same result using right:-2rem */
+    bottom: 4rem;
+    z-index: 1; /* the default value is 0, if we set a positive value will appear up to the other element and if it's negative will appear behind it. */
+}
+
+/* 
+If: 
+    position: fixed;
+    top: 0;
+the box will remain at the top of the window even if we scroll trhu the window, like a top navigation bar.
+*/
+.box-three {
+    background-color: dodgerblue;
+}

@@ -1,0 +1,25 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: #f6e4f5;
+    transition: transform 0.5s linear 0.1s; 
+    /* this property has to be applied to the box element not to the hover. 
+    1-We type "transform" as this is the one we want to modify
+    2-the time to make the transition
+    3-type of movement:
+        ease-in: starts slow and then goes fast
+        ease-out: the opposite to ease-in
+        linear: the same speed during all the time
+        cubic-bezier: in this page https://cubic-bezier.com/#.17,.67,.83,.67 you choose how you want it. 
+            Ex.: cubic-bezier(0,1.65,.67,-0.17)
+    4-delay, after how much time we want the transitions starts
+
+    if we want to apply 2 or more transitions:
+        transition: transform 0.5s, background 0.5s;
+    */
+}
+
+.box:hover {
+    transform: rotate(45deg);
+    background: dodgerblue;
+}

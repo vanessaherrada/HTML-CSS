@@ -1,0 +1,34 @@
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center; /* to align the box and the text in the centerof the page  */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #eef1be;
+}
+
+.box:hover {
+    transform: rotate(15deg); /* when we pass the mouse thru the box it turns 15°, we also can use: 
+    scale(1.5)  to make the box larger or smalles
+    skew(15deg) 
+    translate(100px)  moves the box 100 px horizontally 
+    translate(100px, 100px)  moves it 100px to the right and 100px down
+
+    transform: perspective(200px) translateZ(-50px);  we need the perspective function before the translate> or oherwise it won't work
+    transform: perspective(200px) rotateY(45deg);
+
+    transform origin: 0 0;  used to move the origin point, that by default is the center of the box, 2 values: one for X and one for Y
+    */
+}
+
+.container {
+    perspective: 200px;
+}
+
+.container:hover {
+    transform: rotateY(45deg);
+    transform-origin: 0 50%;
+}

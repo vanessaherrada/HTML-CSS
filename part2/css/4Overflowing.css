@@ -1,0 +1,15 @@
+.box {
+    border: 3px solid gold;
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+}
+
+/*
+Overflow:
+    visible - the text will be visible even if it's bigger than the box
+    hidden - the text out of the box will be hidden
+    scroll - a scrolling bar will appear to be able to scroll thru the text
+    auto - scroll bars will appear if the text is to large and won't appear if the text fits the box
+The overflow property comes from overflow-x and overflow-y
+*/

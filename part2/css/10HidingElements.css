@@ -1,0 +1,3 @@
+.first {
+    visibility: hidden; /* as its name says makes visible or not the paragraph, but note that the space of the paragraph is still there even if the text isn't */
+}

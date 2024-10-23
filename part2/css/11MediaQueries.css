@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column; /* the 2 boxes in the container will be next to each other, column to column */
+}
+
+.box {
+    background-color: #e7f5d4;
+    padding: 1rem;
+}
+.box:nth-of-type(2) {
+    background-color: #f5d4e6;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+}
+/* if the screen is 600px or less the 2nd box in the container will go down */
+
+/*
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+    }
+    .box {
+    backround: white
+    }
+}
+we can also change more characteristics, for example the color
+*/
+
+@media print {
+    body {
+        font-size: 12pt; 
+    }
+    .box {
+        padding: 0.5cm;
+    }
+}
+/* we can also set parameters for printing */

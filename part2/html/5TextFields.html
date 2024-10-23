@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/part2/css/5TextFields.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+    <form>
+        <!-- <input type="email" placeholder="Email">  placeholder is used to have a text in the box but when we start typing the text disappears--> 
+         <input type="text" list="countries" autocomplete="off"> <!-- if the user has type something before and we won't want that info reflected we use autocomplete="off" so the options that the user can see are the ones we set -->
+         <datalist id="countries"> <!-- datalist is used to make a list in an input with the options to chose-->
+            <option data-value="1">Australia</option> <!-- value sets a value to the option ut it appears in the document so the user can see it, if the value needs to be hide we use data-value -->
+            <option>Canada</option>
+            <option>Mexico</option>
+            <option>Irland</option>
+         </datalist>
+    </form>
+</body>
+</html>

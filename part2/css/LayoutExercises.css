@@ -1,0 +1,56 @@
+.container {
+    background: black;
+    border: 1px solid black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box {
+    padding: 0.5rem;  
+    align-content: end;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+.exercise1 .exercise2 {
+    font-size: 30px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container2 {
+   display: grid;
+   grid-gap: 10px;
+}
+
+.puppy {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container2 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .puppy:nth-of-type(3) {
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+      }
+}
+
+

@@ -1,0 +1,23 @@
+/* if we want to discared other rules to make one more important than the others 
+we add "!import" */
+h1 {
+    color: dodgerblue !important;
+}
+
+.highlight {
+    color: deeppink;
+}
+
+#products {
+    color: green;
+}
+
+/* the best option to prioritize rules is writing more detailed statements
+instead of adding "!important" as makes the the code more organized. 2 examples
+below: */
+.highlight #products {
+    color: dodgerblue;
+}
+.featured #products {
+    color: dodgerblue;
+}

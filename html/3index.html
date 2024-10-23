@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      video {
+        height: 200px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      tfoot {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/puppy2.jpg" alt="the eiffel tower" />
+    <!-- controls: to have the buttons, autoplay: to reproduce automatically the video, 
+     loop: tu start in a buclee -->
+    <video controls autoplay loop src="videos/dog.mp4">
+      Your browser doesn't support videos.
+    </video>
+    <ul>
+      <li>About Puppies</li>
+      <li>
+        Dog Breeds
+        <ul>
+          <li>Golden Retriever</li>
+          <li>Dachshund</li>
+          <li>Siberian Husky</li>
+        </ul>
+      </li>
+      <li>Subscribe</li>
+      <li>Contact Us</li>
+    </ul>
+    <dl>
+      <dt>Title</dt>
+      <dd>The Ultimate HTML and CSS Coourse</dd>
+      <dt>Author</dt>
+      <dd>Mosh Hamedani</dd>
+      <dt>Skills</dt>
+      <dd>HTML</dd>
+      <dd>CSS</dd>
+      <dd>Responsive Design</dd>
+      <dd>Search Engine Optimization</dd>
+    </dl>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+          <!--colspan: to set this table header in 2 columns-->
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
